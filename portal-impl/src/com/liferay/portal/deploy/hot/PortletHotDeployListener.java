@@ -472,9 +472,9 @@ public class PortletHotDeployListener extends BaseHotDeployListener {
 
 		registerClpMessageListeners(servletContext, classLoader);
 
-		JSONWebServiceActionsManagerUtil.registerServletContext(servletContext);
-
 		JavadocManagerUtil.load(servletContextName, classLoader);
+
+		JSONWebServiceActionsManagerUtil.registerServletContext(servletContext);
 
 		DirectServletRegistryUtil.clearServlets();
 
